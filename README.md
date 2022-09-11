@@ -39,3 +39,9 @@ py -m pip uninstall elonadl
 
 # In case there are new releases:
 If you see a newer release to a newer version of Elona+ just rerun the script it'll automatically create a new install for the latest version and not touch your older install.
+
+# To Create a new Build
+```
+py setup.py bdist_wheel
+```
+Make sure to alter the attributes in **setup.py**

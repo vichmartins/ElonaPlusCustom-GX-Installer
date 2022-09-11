@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: elonadl
+Version: 0.0.1
+Summary: ElonaPlusGXDownload
+Home-page: UNKNOWN
+Author: Gpx45
+Author-email: vich.martins@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.10
+
+Quick script to download and setup Elona+CGX
+

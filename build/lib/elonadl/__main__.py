@@ -3,7 +3,7 @@ from .Extract import *
 
 if __name__ == '__main__':
 
-    GH_API_ELONA = "https://api.github.com/repos/Gpx45/ElonaPlusGXDownload/releases/latest"
+    GH_API_ELONA = "https://api.github.com/repos/Gpx45/ElonaPlusCGXDownload/releases/latest"
     GH_API_CGX = "https://api.github.com/repos/Ruin0x11/ElonaPlusCustom-GX/releases/latest"
     ELONA_FILE_NAME = 'elona.zip'
     CGX_FILE_NAME = 'cgx.7z'

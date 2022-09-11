@@ -1,4 +1,3 @@
-README.md
 setup.py
 elonadl/Download.py
 elonadl/Extract.py

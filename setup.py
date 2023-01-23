@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="elonadl",
     version="0.0.1",
-    author="Gpx45",
+    author="VH-Martins",
     packages=["elonadl"],
     description="ElonaPlusCGXDownload",
     long_description="Quick script to download and setup Elona+CGX",

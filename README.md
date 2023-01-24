@@ -6,7 +6,7 @@ https://github.com/Ruin0x11/ElonaPlusCustom-GX
 
 
 # How to Install
-(Make sure you have *_Python3.10*_ or higher prior)
+(Make sure you have ***_Python3.10*** or higher prior)
 
 Just go to the *dist* folder and download the *elonadl-0.0.1-py3-none-any.whl* package.
 

@@ -6,15 +6,15 @@ Please visit **[Ruin0x11](https://github.com/Ruin0x11/ElonaPlusCustom-GX)**'s re
 # How to Install:
 (Make sure you have ***Python3.10*** or higher prior)
 
-Just go to the *dist* folder and download the *elonadl-0.0.1-py3-none-any.whl* package.
+Just go to the *dist* folder and download the *elonadl-<VERSION>-py3-none-any.whl* package.
 
 Go to the folder you downloaded the package to and install it with the following command.
 ```
-pip install elonadl-0.0.1-py3-none-any.whl
+pip install elonadl-<VERSION>-py3-none-any.whl
 ```
 or
 ```
-py -m pip install elonadl-0.0.1-py3-none-any.whl
+py -m pip install elonadl-<VERSION>-py3-none-any.whl
 ```
 
 To run the module just run the following command.

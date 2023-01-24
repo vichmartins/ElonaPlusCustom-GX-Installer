@@ -1,12 +1,10 @@
 # ElonaPlusGXDownload for Windows
 Quick script to download and setup Elona+GX on Windows installs.
 
-Please visit **Ruin0x11**'s repo as they are the ones to thank.
-https://github.com/Ruin0x11/ElonaPlusCustom-GX
+Please visit **[Ruin0x11](https://github.com/Ruin0x11/ElonaPlusCustom-GX)**'s repo as they are the ones to thank.
 
-
-# How to Install
-(Make sure you have Python3.10 or higher prior)
+# How to Install:
+(Make sure you have ***Python3.10*** or higher prior)
 
 Just go to the *dist* folder and download the *elonadl-0.0.1-py3-none-any.whl* package.
 
@@ -38,10 +36,12 @@ py -m pip uninstall elonadl
 ```
 
 # In case there are new releases:
-If you see a newer release to a newer version of Elona+ just rerun the script it'll automatically create a new install for the latest version and not touch your older install.
+If you see a newer release to a newer version of Elona+ just rerun ```py -m elonadl``` it'll automatically create a new install for the latest version and not touch your older install.
 
 # To Create a new Build
 ```
 py setup.py bdist_wheel
 ```
+
+_Make sure in have ```wheel``` package installed on your system prior to building_
 Make sure to alter the attributes in **setup.py**

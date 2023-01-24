@@ -1,5 +1,6 @@
 from .Download import *
 from .Extract import *
+from .Desktop import *
 
 if __name__ == '__main__':
 
@@ -7,6 +8,7 @@ if __name__ == '__main__':
     GH_API_CGX = "https://api.github.com/repos/Ruin0x11/ElonaPlusCustom-GX/releases/latest"
     ELONA_FILE_NAME = 'elona.zip'
     CGX_FILE_NAME = 'cgx.7z'
+    SHORTCUT_NAME = 'ElonaPlusCGX'
 
     def main():
         print("downloading latest version of Elona+ to your %APPDATA% folder")
@@ -27,5 +29,11 @@ if __name__ == '__main__':
         c = Extract(cgx.get_name())
         c.extract_7z()
         print("DONE!")
+
+        print("Creating Desktop Shortcut")
+        path = e.find_latest_version()
+        version = e.scrape_version()
+        d = Desktop(name=SHORTCUT_NAME, path=path, version=version)
+        d.create_shortcut()
 
     main()

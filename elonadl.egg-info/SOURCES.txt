@@ -1,5 +1,6 @@
 README.md
 setup.py
+elonadl/Desktop.py
 elonadl/Download.py
 elonadl/Extract.py
 elonadl/__main__.py

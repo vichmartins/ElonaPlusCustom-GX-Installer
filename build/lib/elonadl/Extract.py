@@ -36,7 +36,17 @@ class Extract:
             exit()
 
         result = path.join(getenv('APPDATA'), max(u) + '\\')
-        print("Installation location --> ", result)
-        print("To play game run 'elonapluscgx.exe'")
 
         return result
+
+    def scrape_version(self):
+        t = listdir(path=getenv('APPDATA'))
+        n = "elonaplus"
+        u = list()
+
+        for x in t:
+            h = findall(n + "[0-9].[0-9][0-9]", x)
+            if h:
+                u.append(x)
+
+        return max(u)[9:]

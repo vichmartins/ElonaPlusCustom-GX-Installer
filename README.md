@@ -42,4 +42,6 @@ If you see a newer release to a newer version of Elona+ just rerun ```py -m elon
 ```
 py setup.py bdist_wheel
 ```
+
+_Make sure in have ```wheel``` package installed on your system prior to building_
 Make sure to alter the attributes in **setup.py**

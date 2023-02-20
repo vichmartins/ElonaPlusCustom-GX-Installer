@@ -13,13 +13,13 @@ Just go to the _dist_ folder and download the _elonadl-0.0.1-py3-none-any.whl_ p
 Go to the folder you downloaded the package to and install it with the following command.
 
 ```
-pip install elonadl-0.0.1-py3-none-any.whl
+pip install elonadl-<VERSION>-py3-none-any.whl
 ```
 
 or
 
 ```
-py -m pip install elonadl-0.0.1-py3-none-any.whl
+py -m pip install elonadl-<VERSION>-py3-none-any.whl
 ```
 
 To run the module just run the following command. _Whenever there is a new update for Custom-GX simply rerun this command and it'll update your installation._

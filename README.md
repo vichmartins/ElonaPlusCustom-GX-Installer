@@ -22,7 +22,7 @@ or
 py -m pip install elonadl-<VERSION>-py3-none-any.whl
 ```
 
-To run the module just run the following command. _*Whenever there is a new update for Custom-GX simply rerun this command and it'll update your installation.*_
+To run the module just run the following command. _**Whenever there is a new update for Custom-GX simply rerun this command and it'll update your installation.**_
 
 ```
 py -m elonadl

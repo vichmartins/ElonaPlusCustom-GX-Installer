@@ -15,6 +15,8 @@ Go to the folder you downloaded the package to and install it with the following
 ## Installation:
 ```
 pip install elonadl
+
+python elonadl
 ```
 ## Install stragiht from .whl or tar.gz packages
 ```

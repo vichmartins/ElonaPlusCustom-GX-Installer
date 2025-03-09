@@ -1,4 +1,4 @@
-./.vscode/
+**/.vscode/
 ./elonadl/__pycache__
 ./elonadl.egg-info/
 ./build/bdist.win-amd64/

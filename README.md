@@ -12,6 +12,13 @@ Just go to the _dist_ folder and download the package.
 
 Go to the folder you downloaded the package to and install it with the following command.
 
+## Installation:
+```
+pip install elonadl
+
+python elonadl
+```
+## Install stragiht from .whl or tar.gz packages
 ```
 pip install elonadl-<VERSION>-py3-none-any.whl
 ```
@@ -19,7 +26,7 @@ pip install elonadl-<VERSION>-py3-none-any.whl
 or
 
 ```
-py -m pip install elonadl-<VERSION>-py3-none-any.whl
+py -m pip install elonadl-<VERSION>.tar.gz
 ```
 
 To run the module just run the following command. _**Whenever there is a new update for Custom-GX simply rerun this command and it'll update your installation.**_
@@ -52,7 +59,11 @@ If you see a newer release to a newer version of Elona+ just rerun `py -m elonad
 # To Create a new Build
 
 ```
-py setup.py bdist_wheel
+py setup.py bdist_wheel # .whl
+
+or
+
+py setup.py sdist # .tar.gz
 ```
 
 _Make sure in have `wheel` package installed on your system prior to building_

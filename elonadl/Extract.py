@@ -1,6 +1,5 @@
 from zipfile import ZipFile
 from os import getenv, path, listdir
-from py7zr import SevenZipFile
 from re import findall
 
 
@@ -14,13 +13,6 @@ class Extract:
 
         with ZipFile(c) as z:
             z.extractall(local)
-
-    def extract_7z(self):
-        local = getenv('APPDATA')
-        c = path.join(local, self.file_name)
-
-        with SevenZipFile(c, mode='r') as p:
-            p.extractall(path=self.find_latest_version())
 
     def find_latest_version(self):
         t = listdir(path=getenv('APPDATA'))

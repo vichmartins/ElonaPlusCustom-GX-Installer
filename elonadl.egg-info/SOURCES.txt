@@ -1,8 +1,10 @@
 README.md
 setup.py
+elonadl/Cleanup.py
 elonadl/Desktop.py
 elonadl/Download.py
 elonadl/Extract.py
+elonadl/Move.py
 elonadl/__main__.py
 elonadl.egg-info/PKG-INFO
 elonadl.egg-info/SOURCES.txt

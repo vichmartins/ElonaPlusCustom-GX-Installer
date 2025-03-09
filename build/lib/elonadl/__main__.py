@@ -1,11 +1,14 @@
-from .Download import *
-from .Extract import *
-from .Desktop import *
+from Download import *
+from Extract import *
+from Desktop import *
 
 if __name__ == '__main__':
 
-    GH_API_ELONA = "https://api.github.com/repos/Gpx45/ElonaPlusCGXDownload/releases/latest"
-    GH_API_CGX = "https://api.github.com/repos/Ruin0x11/ElonaPlusCustom-GX/releases/latest"
+    # Old Repo:
+    #GH_API_CGX = "https://api.github.com/repos/Ruin0x11/ElonaPlusCustom-GX/releases/latest"
+
+    GH_API_ELONA = "https://api.github.com/repos/vichmartins/ElonaPlusCGXDownload/releases/latest"
+    GH_API_CGX = "https://api.github.com/repos/JianmengYu/ElonaPlusCustom-GX/releases/latest"
     ELONA_FILE_NAME = 'elona.zip'
     CGX_FILE_NAME = 'cgx.7z'
     SHORTCUT_NAME = 'ElonaPlusCGX'
@@ -27,7 +30,7 @@ if __name__ == '__main__':
 
         print("setting up CustomGX")
         c = Extract(cgx.get_name())
-        c.extract_7z()
+        c.extract_zip()
         print("DONE!")
 
         print("Creating Desktop Shortcut")

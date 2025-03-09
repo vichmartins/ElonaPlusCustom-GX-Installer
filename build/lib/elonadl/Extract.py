@@ -1,6 +1,6 @@
 from zipfile import ZipFile
 from os import getenv, path, listdir
-from py7zr import SevenZipFile
+#from py7zr import SevenZipFile
 from re import findall
 
 

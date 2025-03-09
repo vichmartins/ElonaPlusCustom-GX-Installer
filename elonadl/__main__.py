@@ -3,6 +3,7 @@ from Extract import *
 from Desktop import *
 from Move import *
 from Cleanup import *
+from StartMenu import *
 
 if __name__ == '__main__':
 
@@ -52,5 +53,9 @@ if __name__ == '__main__':
             cleaner.execute()
         except Exception as e:
             print(f"Error: {e}")
+
+        print("Creating Start Menu Shortcut")
+        start_menu = StartMenu(path)
+        start_menu.create_shortcut()
 
     main()

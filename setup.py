@@ -6,7 +6,7 @@ setup(
     author="vichmartins",
     packages=["elonadl"],
     description="ElonaPlusCGXDownload",
-    long_description="Quick script to download and setup Elona+CGX",
+    long_description="Installs the latest version of Elona+CGX (Windows Only Currently)",
     python_requires='>=3.10',
     install_requires=['pywin32', 'requests', 'winshell']
 )

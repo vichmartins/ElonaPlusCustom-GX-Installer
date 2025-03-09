@@ -1,7 +1,7 @@
 Metadata-Version: 2.2
 Name: elonadl
-Version: 0.1.12
-Summary: ElonaPlusCGXDownload
+Version: 0.1.13
+Summary: A Installer to download and setup ElonaPlusCustom-GX on Windows.
 Author: vichmartins
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
@@ -17,9 +17,10 @@ Dynamic: summary
 
 # ElonaPlusCustom-GX Installer script for Windows
 
-Quick script to download and setup Elona+CGX on Windows installs.
+A Installer to download and setup ElonaPlusCustom-GX on Windows.
 
 New Repo: **[JianmengYu](https://github.com/JianmengYu/ElonaPlusCustom-GX)** Current Repo based.
+
 Please visit **[Ruin0x11](https://github.com/Ruin0x11/ElonaPlusCustom-GX)**'s Previous Archived Repo
 
 # How to Install:

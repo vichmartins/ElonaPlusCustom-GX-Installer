@@ -5,10 +5,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="elonadl",
-    version="0.1.12",
+    version="0.1.13",
     author="vichmartins",
     packages=["elonadl"],
-    description="ElonaPlusCGXDownload",
+    description="A Installer to download and setup ElonaPlusCustom-GX on Windows.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     python_requires='>=3.10',

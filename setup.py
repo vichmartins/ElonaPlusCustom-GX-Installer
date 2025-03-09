@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="elonadl",
-    version="0.1.16",
+    version="0.1.17",
     author="vichmartins",
     packages=["elonadl"],
     description="A Installer to download and setup ElonaPlusCustom-GX on Windows.",

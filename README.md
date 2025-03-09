@@ -7,9 +7,9 @@ New Repo: **[JianmengYu](https://github.com/JianmengYu/ElonaPlusCustom-GX)** Cur
 Please visit **[Ruin0x11](https://github.com/Ruin0x11/ElonaPlusCustom-GX)**'s Previous Archived Repo
 
 # Version:
-Installer Version: **v0.1.15**
-Game Version: **Elona+ 2.25R**
-Custom-GX Version: **2.25.1.1**
+Installer Version: **v0.1.15**<br>
+Game Version: **Elona+ 2.25R**<br>
+Custom-GX Version: **2.25.1.1**<br>
 
 # How to Install:
 

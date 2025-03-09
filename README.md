@@ -1,9 +1,8 @@
-# ElonaPlusCustom-GX Installer for Windows
+# ElonaPlusCustom-GX Installer script for Windows
 
-Quick installer to download and setup ElonaPlusCustom-GX on Windows.
+Quick script to download and setup Elona+CGX on Windows installs.
 
 New Repo: **[JianmengYu](https://github.com/JianmengYu/ElonaPlusCustom-GX)** Current Repo based.
-
 Please visit **[Ruin0x11](https://github.com/Ruin0x11/ElonaPlusCustom-GX)**'s Previous Archived Repo
 
 # How to Install:

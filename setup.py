@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="elonadl",
-    version="0.1.10",
+    version="0.1.12",
     author="vichmartins",
     packages=["elonadl"],
     description="ElonaPlusCGXDownload",

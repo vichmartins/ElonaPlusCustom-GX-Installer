@@ -1,8 +1,11 @@
 from setuptools import setup
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name="elonadl",
-    version="0.1.8",
+    version="0.1.9",
     author="vichmartins",
     packages=["elonadl"],
     description="ElonaPlusCGXDownload",

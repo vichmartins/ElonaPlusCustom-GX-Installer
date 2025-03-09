@@ -1,5 +1,5 @@
 ./.vscode/
-.vscode/settings.json
+./.vscode/settings.json
 ./elonadl/__pycache__
 ./elonadl.egg-info/
 ./build/bdist.win-amd64/

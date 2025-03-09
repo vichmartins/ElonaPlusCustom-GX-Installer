@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: elonadl
-Version: 0.1.7
+Version: 0.1.8
 Summary: ElonaPlusCGXDownload
 Author: vichmartins
 Requires-Python: >=3.10
@@ -13,4 +13,4 @@ Dynamic: requires-dist
 Dynamic: requires-python
 Dynamic: summary
 
-Quick script to download and setup Elona+CGX
+Installs the latest version of Elona+CGX (Windows Only Currently)

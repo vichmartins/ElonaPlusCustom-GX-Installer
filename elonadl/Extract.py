@@ -1,21 +1,23 @@
 from zipfile import ZipFile
-from os import getenv, path, listdir
+from os import path, listdir
 from re import findall
 
 
 class Extract:
-    def __init__(self, file_name) -> None:
+
+    def __init__(self, file_name, install_path) -> None:
         self.file_name = file_name
+        self.install_path = install_path
 
     def extract_zip(self):
-        local = getenv('APPDATA')
+        local = self.install_path
         c = path.join(local, self.file_name)
 
         with ZipFile(c) as z:
             z.extractall(local)
 
     def find_latest_version(self):
-        t = listdir(path=getenv('APPDATA'))
+        t = listdir(path=self.install_path)
         n = "elonaplus"
         u = list()
 
@@ -27,12 +29,12 @@ class Extract:
         if not u:
             exit()
 
-        result = path.join(getenv('APPDATA'), max(u) + '\\')
+        result = path.join(self.install_path, max(u) + '\\')
 
         return result
 
     def scrape_version(self):
-        t = listdir(path=getenv('APPDATA'))
+        t = listdir(path=self.install_path)
         n = "elonaplus"
         u = list()
 

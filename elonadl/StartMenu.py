@@ -3,16 +3,15 @@ from win32com.client import Dispatch
 from pathlib import Path
 
 class StartMenu:
-    def __init__(self, install_path, use_all_users=False):
+
+    def __init__(self, install_path, folder_name, use_all_users=False):
         self.install_path = install_path
-        self.folder_name = 'ElonaPlusCustom-GX'
+        self.folder_name = folder_name
         
         if use_all_users:
-            # All users (requires admin privileges)
             self.program_data = os.environ.get('PROGRAMDATA')
             self.start_menu_path = Path(self.program_data) / 'Microsoft' / 'Windows' / 'Start Menu' / 'Programs'
         else:
-            # Current user only (doesn't require admin privileges)
             self.start_menu_path = Path(os.path.expanduser('~')) / 'AppData' / 'Roaming' / 'Microsoft' / 'Windows' / 'Start Menu' / 'Programs'
         
         self.folder_path = self.start_menu_path / self.folder_name
@@ -31,16 +30,13 @@ class StartMenu:
     
     def create_shortcut(self, shortcut_name="Elona Plus Custom-GX"):
         try:
-            # Check if install_path exists
             if not Path(self.install_path).exists():
                 print(f"Error: Install path does not exist: {self.install_path}")
                 return False
                 
-            # Create directory if it doesn't exist
             if not self.create_directory():
                 return False
-                
-            # Create shortcut
+
             shortcut_path = self.folder_path / f"{shortcut_name}.lnk"
             shell = Dispatch('WScript.Shell')
             shortcut = shell.CreateShortCut(str(shortcut_path))

@@ -2,12 +2,12 @@ import os
 import shutil
 
 class Move:
+    
     def __init__(self, source_path, destination):
         self.source_path = source_path
         self.destination = destination
        
     def find_elona_directory(self) -> list:
-        # Get all directories in the source path
         elona_dirs = []
         for item in os.listdir(self.source_path):
             item_path = os.path.join(self.source_path, item)
@@ -37,15 +37,15 @@ class Move:
                     shutil.copy2(source_item, dest_item)
                     count += 1
                 elif os.path.isdir(source_item):
-                    # Handle directory that already exists
+
                     if os.path.exists(dest_item):
-                        # Merge directories by copying contents
+  
                         files_copied = self._merge_directories(source_item, dest_item)
                         count += files_copied
                     else:
-                        # Directory doesn't exist, so copy entire tree
+
                         shutil.copytree(source_item, dest_item)
-                        count += 1  # Count directory as one item
+                        count += 1 
             except (shutil.Error, OSError) as e:
                 print(f"Error moving {source_item}: {e}")
                
@@ -82,7 +82,6 @@ class Move:
             "success": False
         }
        
-        # Find Elona+ directories
         elona_dirs = self.find_elona_directory()
        
         if not elona_dirs:
@@ -91,10 +90,8 @@ class Move:
        
         results["elona_dirs_found"] = elona_dirs
        
-        # Create destination directory
         dest_path = self.create_destination_directory()
        
-        # Move files from each Elona+ directory
         total_moved = 0
         for elona_dir in elona_dirs:
             print(f"Moving files from {elona_dir} to {dest_path}")

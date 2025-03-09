@@ -7,14 +7,12 @@ from StartMenu import *
 
 if __name__ == '__main__':
 
-    # Old Repo:
-    #GH_API_CGX = "https://api.github.com/repos/Ruin0x11/ElonaPlusCustom-GX/releases/latest"
-
     GH_API_ELONA = "https://api.github.com/repos/vichmartins/ElonaPlusCGXDownload/releases/latest"
     GH_API_CGX = "https://api.github.com/repos/JianmengYu/ElonaPlusCustom-GX/releases/latest"
     ELONA_FILE_NAME = 'elona.zip'
     CGX_FILE_NAME = 'cgx.zip'
-    SHORTCUT_NAME = 'ElonaPlusCGX'
+    EXE = 'elonapluscgx.exe'
+    SHORTCUT_NAME = 'ElonaPlusCustom-GX'
     INSTALL_PATH = os.getenv('APPDATA')
 
     def main():
@@ -55,7 +53,9 @@ if __name__ == '__main__':
             print(f"Error: {e}")
 
         print("Creating Start Menu Shortcut")
-        start_menu = StartMenu(path)
+        start_menu = StartMenu(path + "\\" + EXE, use_all_users=False)
         start_menu.create_shortcut()
+
+        print('Setup Finished! Enjoy ElonaCustom-GX!')
 
     main()

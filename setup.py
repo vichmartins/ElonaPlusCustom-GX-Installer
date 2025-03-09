@@ -8,7 +8,7 @@ setup(
     version="0.1.12",
     author="vichmartins",
     packages=["elonadl"],
-    description="ElonaPlusCGXDownload",
+    description="Quick installer to download and setup ElonaPlusCustom-GX on Windows.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     python_requires='>=3.10',

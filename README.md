@@ -12,6 +12,11 @@ Just go to the _dist_ folder and download the package.
 
 Go to the folder you downloaded the package to and install it with the following command.
 
+## Installation:
+```
+pip install elonal
+```
+## Install stragiht from .whl or tar.gz packages
 ```
 pip install elonadl-<VERSION>-py3-none-any.whl
 ```

@@ -14,7 +14,7 @@ Go to the folder you downloaded the package to and install it with the following
 
 ## Installation:
 ```
-pip install elonal
+pip install elonadl
 ```
 ## Install stragiht from .whl or tar.gz packages
 ```

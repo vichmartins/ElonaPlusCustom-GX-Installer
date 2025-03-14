@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: elonadl
-Version: 0.1.18
+Version: 0.1.19
 Summary: A Installer to download and setup ElonaPlusCustom-GX on Windows.
 Author: vichmartins
 Requires-Python: >=3.10

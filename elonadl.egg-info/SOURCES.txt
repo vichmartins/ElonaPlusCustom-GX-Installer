@@ -5,8 +5,14 @@ elonadl/Desktop.py
 elonadl/Download.py
 elonadl/Extract.py
 elonadl/Move.py
-elonadl/StartMenu.py
+elonadl/__init__.py
 elonadl/__main__.py
+elonadl/cleanup.py
+elonadl/desktop.py
+elonadl/download.py
+elonadl/extract.py
+elonadl/move.py
+elonadl/start_menu.py
 elonadl.egg-info/PKG-INFO
 elonadl.egg-info/SOURCES.txt
 elonadl.egg-info/dependency_links.txt

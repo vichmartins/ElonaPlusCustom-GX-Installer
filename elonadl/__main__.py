@@ -1,9 +1,9 @@
-from Download import *
-from Extract import *
-from Desktop import *
-from Move import *
-from Cleanup import *
-from StartMenu import *
+from download import *
+from extract import *
+from desktop import *
+from move import *
+from cleanup import *
+from startmenu import *
 
 if __name__ == '__main__':
 

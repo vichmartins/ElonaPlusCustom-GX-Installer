@@ -24,9 +24,16 @@ def main():
     result = mover.execute()
     print(f"Operation {'successful' if result['success'] else 'failed'}")
 
+
+# TODO: #dir = max(u)
+        #rename(path.join(self.install_path, dir), path.join(self.install_path + '\\' + SHORTCUT_NAME + dir[9:13]))
+
+
     print("Creating Desktop Shortcut")
     path = e.find_latest_version()
+    print("Path: ", path)
     version = e.scrape_version()
+    print("Version: ", version)
     d = elona.desktop.Desktop(name=elona.SHORTCUT_NAME, path=path, version=version, exe=elona.EXE, description=elona.SHORTCUT_NAME)
     d.create_shortcut()
 

@@ -1,5 +1,6 @@
+from elonadl import SHORTCUT_NAME
 from zipfile import ZipFile
-from os import path, listdir
+from os import path, listdir, rename
 from re import findall
 
 
@@ -27,8 +28,9 @@ class Extract:
                 u.append(x)
 
         if not u:
+            print("No Elona+ directory found.")
             exit()
-
+        
         result = path.join(self.install_path, max(u) + '\\')
 
         return result

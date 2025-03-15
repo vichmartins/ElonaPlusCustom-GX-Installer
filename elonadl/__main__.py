@@ -24,16 +24,11 @@ def main():
     result = mover.execute()
     print(f"Operation {'successful' if result['success'] else 'failed'}")
 
-
-# TODO: #dir = max(u)
-        #rename(path.join(self.install_path, dir), path.join(self.install_path + '\\' + SHORTCUT_NAME + dir[9:13]))
-
+    print("Renaming Elona+ directory")
+    path = e.rename_directory()
 
     print("Creating Desktop Shortcut")
-    path = e.find_latest_version()
-    print("Path: ", path)
     version = e.scrape_version()
-    print("Version: ", version)
     d = elona.desktop.Desktop(name=elona.SHORTCUT_NAME, path=path, version=version, exe=elona.EXE, description=elona.SHORTCUT_NAME)
     d.create_shortcut()
 
@@ -45,7 +40,7 @@ def main():
         print(f"Error: {e}")
 
     print("Creating Start Menu Shortcut")
-    menu = elona.start_menu.StartMenu(path + "\\" + elona.EXE, use_all_users=False, folder_name=elona.SHORTCUT_NAME)
+    menu = elona.start_menu.StartMenu(install_path=path + version + "\\" + elona.EXE, use_all_users=False, folder_name=elona.SHORTCUT_NAME, current_version=version)
     menu.create_shortcut()
 
     print('Setup Finished! Enjoy ElonaCustom-GX!')

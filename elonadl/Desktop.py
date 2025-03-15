@@ -14,6 +14,6 @@ class Desktop:
     def create_shortcut(self):
         desktop = winshell.desktop()
         with winshell.shortcut(join(desktop, self.name + ' ' + self.version + ".lnk")) as shortcut:
-            shortcut.path = self.path + self.exe
-            shortcut.icon_location = self.path + self.exe, 0
+            shortcut.path = self.path + self.version + '\\' + self.exe
+            shortcut.icon_location = self.path + self.version + '\\' + self.exe, 0
             shortcut.description = self.description + self.version

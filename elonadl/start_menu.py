@@ -1,12 +1,15 @@
 import os
+from elonadl import SHORTCUT_NAME
 from win32com.client import Dispatch
 from pathlib import Path
 
 class StartMenu:
 
-    def __init__(self, install_path, folder_name, use_all_users=False):
+    def __init__(self, install_path, current_version, folder_name, use_all_users=False):
         self.install_path = install_path
-        self.folder_name = folder_name
+        self.current_version = current_version
+        self.folder_name = folder_name + self.current_version
+
         
         if use_all_users:
             self.program_data = os.environ.get('PROGRAMDATA')
@@ -28,16 +31,16 @@ class StartMenu:
             print(f"Error creating directory: {e}")
             return False
     
-    def create_shortcut(self, shortcut_name="Elona Plus Custom-GX"):
+    def create_shortcut(self, shortcut_name=SHORTCUT_NAME):
         try:
             if not Path(self.install_path).exists():
-                print(f"Error: Install path does not exist: {self.install_path}")
+                print(f"Error: Install path does not exist: {self.install_path + self.current_version}")
                 return False
                 
             if not self.create_directory():
                 return False
 
-            shortcut_path = self.folder_path / f"{shortcut_name}.lnk"
+            shortcut_path = self.folder_path / f"{shortcut_name + self.current_version}.lnk"
             shell = Dispatch('WScript.Shell')
             shortcut = shell.CreateShortCut(str(shortcut_path))
             shortcut.Targetpath = self.install_path
@@ -52,7 +55,7 @@ class StartMenu:
     
     def remove_shortcut(self, shortcut_name="Elona Plus Custom-GX"):
         try:
-            shortcut_path = self.folder_path / f"{shortcut_name}.lnk"
+            shortcut_path = self.folder_path / f"{shortcut_name + self.current_version}.lnk"
             if shortcut_path.exists():
                 shortcut_path.unlink()
                 print(f"Removed shortcut: {shortcut_path}")

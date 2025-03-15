@@ -33,13 +33,14 @@ Please visit **[Ruin0x11](https://github.com/Ruin0x11/ElonaPlusCustom-GX)**'s Pr
 
 ### Need to Know:
 You may receive a false positive from Windows Defender
-Please review the github issue: **[here](https://github.com/Ruin0x11/ElonaPlusCustom-GX/issues/103)**
+Please review the github issue: **[here](https://github.com/Ruin0x11/ElonaPlusCustom-GX/issues/103)** for more information.
+
 
  - In this case just disable __Windows Defender__ or other Anti-Virus prior to installing and re-enable after its finished installing.
 
 # Version:
 
-Current Installer Version: **v0.1.18**<br>
+Current Installer Version: **v0.1.19**<br>
 
 Current Game Version: **Elona+ 2.25R**<br>
 

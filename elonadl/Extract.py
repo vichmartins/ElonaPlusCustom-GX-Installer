@@ -49,6 +49,9 @@ class Extract:
     
     def rename_directory(self):
         dir = max(self.p)
-        rename(path.join(self.install_path, dir), path.join(self.install_path + '\\' + SHORTCUT_NAME + dir[9:13]))
+        rename(path.join(self.install_path, dir), 
+               path.join(self.install_path + '\\' 
+                    + SHORTCUT_NAME + dir[9:13]))
         
-        return path.join(self.install_path + '\\' + SHORTCUT_NAME)
+        return path.join(self.install_path 
+                + '\\' + SHORTCUT_NAME)

@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: elonadl
-Version: 0.1.22
+Version: 0.1.23
 Summary: A Installer to download and setup ElonaPlusCustom-GX on Windows.
 Author: vichmartins
 Requires-Python: >=3.10
@@ -41,7 +41,7 @@ Please review the github issue: **[here](https://github.com/Ruin0x11/ElonaPlusCu
 
 # Version:
 
-Current Installer Version: **v0.1.22**<br>
+Current Installer Version: **v0.1.23**<br>
 
 Current Game Version: **Elona+ 2.26**<br>
 

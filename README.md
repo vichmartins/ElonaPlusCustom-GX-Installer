@@ -24,7 +24,7 @@ Please review the github issue: **[here](https://github.com/Ruin0x11/ElonaPlusCu
 
 # Version:
 
-Current Installer Version: **v0.1.22**<br>
+Current Installer Version: **v0.1.23**<br>
 
 Current Game Version: **Elona+ 2.26**<br>
 

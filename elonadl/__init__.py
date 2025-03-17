@@ -8,10 +8,10 @@ EXE = 'elonapluscgx.exe'
 SHORTCUT_NAME = 'ElonaPlusCustom-GX'
 INSTALL_PATH = os.getenv('APPDATA')
 
-from download import *
-from extract import *
-from desktop import *
-from move import *
-from cleanup import *
-from start_menu import *
+from elonadl.download import *
+from elonadl.extract import *
+from elonadl.desktop import *
+from elonadl.move import *
+from elonadl.cleanup import *
+from elonadl.start_menu import *
 

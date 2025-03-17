@@ -59,8 +59,8 @@ python -m elonadl
 If you see a newer release to a newer version. Run the update command:
  ```pip install elonadl --upgrade```<br> it'll install the new latest version.<br>
 
-##### It will not impact your current game's installation. Just the python package itself.
-
+##### It will not impact your current game's installation. Just the python package itself. 
+##### Running the command `python -m elonadl` will download and install the latest version of the game, it will not impact the previous installation. So your saves will be intact (that being said, we always recommend backing up your saves).
 
 
 ## Install straight from .whl or tar.gz packages

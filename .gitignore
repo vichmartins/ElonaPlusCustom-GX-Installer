@@ -2,6 +2,6 @@ notes.txt
 requirements.txt
 ./.vscode/
 ./.vscode/settings.json
-./elonadl/__pycache__
+./elonadl/__pycache__/
 ./elonadl.egg-info/
 ./build/bdist.win-amd64/

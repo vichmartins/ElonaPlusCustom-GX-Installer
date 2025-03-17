@@ -3,5 +3,5 @@ requirements.txt
 elonadl/__pycache__/
 ./.vscode/
 ./.vscode/settings.json
-./elonadl.egg-info/
+elonadl.egg-info/
 ./build/bdist.win-amd64/

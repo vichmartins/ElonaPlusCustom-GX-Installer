@@ -11,9 +11,9 @@ Please visit **[Ruin0x11](https://github.com/Ruin0x11/ElonaPlusCustom-GX)**'s Pr
 
 ### Learn about the game:
 
-**[Ylvania](https://ylvania.org/elona_e.html)**: Official Site.
-**[Fandom Wiki](https://elona.fandom.com/wiki/Elona_Wiki)**: Game Wiki.
-**[Discord](https://discord.gg/Razdxsk)**: Discord Channel.
+**[Ylvania](https://ylvania.org/elona_e.html)**: Official Site.<br>
+**[Fandom Wiki](https://elona.fandom.com/wiki/Elona_Wiki)**: Game Wiki.<br>
+**[Discord](https://discord.gg/Razdxsk)**: Discord Channel.<br>
 
 ### Need to Know:
 You may receive a false positive from Windows Defender
@@ -24,7 +24,7 @@ Please review the github issue: **[here](https://github.com/Ruin0x11/ElonaPlusCu
 
 # Version:
 
-Current Installer Version: **v0.1.23**<br>
+Current Installer Version: **v0.1.25**<br>
 
 Current Game Version: **Elona+ 2.26**<br>
 

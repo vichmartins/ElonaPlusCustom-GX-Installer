@@ -1,4 +1,4 @@
-from elonadl import SHORTCUT_NAME
+import elonadl as elona
 from zipfile import ZipFile
 from os import path, listdir, rename
 from re import findall
@@ -37,7 +37,7 @@ class Extract:
 
     def scrape_version(self):
         t = listdir(path=self.install_path)
-        n = SHORTCUT_NAME
+        n = elona.SHORTCUT_NAME
         u = list()
 
         for x in t:
@@ -49,9 +49,20 @@ class Extract:
     
     def rename_directory(self):
         dir = max(self.p)
-        rename(path.join(self.install_path, dir), 
-               path.join(self.install_path + '\\' 
-                    + SHORTCUT_NAME + dir[9:13]))
-        
+    
+        try:
+            rename(path.join(self.install_path, dir), 
+            path.join(self.install_path, elona.SHORTCUT_NAME + dir[9:13]))
+        except FileExistsError as e:
+            cleaner = elona.cleanup.Cleanup(main_game=elona.ELONA_FILE_NAME, 
+                                            mod=elona.CGX_FILE_NAME)
+            cleaner.execute()
+            print(f"Error: {e}")
+            print("The current vesion already exists in the directory. Exiting.")
+            exit()
+        except Exception as e:
+            print(f"Error: {e}")
+            exit()
+            
         return path.join(self.install_path 
-                + '\\' + SHORTCUT_NAME)
+                + '\\' + elona.SHORTCUT_NAME)

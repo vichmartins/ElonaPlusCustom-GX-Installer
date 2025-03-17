@@ -54,7 +54,6 @@ class Extract:
             rename(path.join(self.install_path, dir), 
             path.join(self.install_path, elona.SHORTCUT_NAME + dir[9:13]))
         except FileExistsError as e:
-            print(f"DIRECTORY NAME: {elona.BASE_ELONA_DIR + dir[9:13]}")
             cleaner = elona.cleanup.Cleanup(main_game=elona.ELONA_FILE_NAME, 
                                             mod=elona.CGX_FILE_NAME, base_dir=f"{elona.BASE_ELONA_DIR + dir[9:13]}")
             cleaner.execute()

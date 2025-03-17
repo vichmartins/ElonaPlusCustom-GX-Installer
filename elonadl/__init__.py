@@ -2,6 +2,8 @@ import os
 
 GH_API_ELONA = "https://api.github.com/repos/vichmartins/ElonaPlusCGXDownload/releases/latest"
 GH_API_CGX = "https://api.github.com/repos/JianmengYu/ElonaPlusCustom-GX/releases/latest"
+BASE_ELONA_DIR = 'elonaplus'
+BASE_CGX_DIR = 'Elona+'
 ELONA_FILE_NAME = 'Elona.zip'
 CGX_FILE_NAME = 'Custom-GX.zip'
 EXE = 'elonapluscgx.exe'

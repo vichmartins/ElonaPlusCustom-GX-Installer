@@ -1,16 +1,18 @@
+import elonadl as elona
 import os
 import shutil
 
 class Cleanup:
 
-    def __init__(self, main_game, mod, path=None):
+    def __init__(self, main_game, mod, base_dir, path=None):
         self.path = path or os.getenv('APPDATA')
         self.game = main_game
         self.mod = mod
+        self.base_dir = base_dir
         if not self.path:
             raise ValueError("APPDATA environment variable not found and no path provided.")
         
-        self.files_to_delete = [self.mod, self.game]
+        self.files_to_delete = [self.mod, self.game, self.base_dir]
         
     def find_targets(self) -> dict:
         results = {
@@ -25,7 +27,8 @@ class Cleanup:
                 
         for item in os.listdir(self.path):
             item_path = os.path.join(self.path, item)
-            if os.path.isdir(item_path) and item.startswith('Elona+'):
+            if (os.path.isdir(item_path) and item.startswith(elona.BASE_CGX_DIR) 
+                or os.path.isdir(item_path) and item.startswith(elona.BASE_ELONA_DIR)):
                 results["directories"].append(item_path)
                 
         return results

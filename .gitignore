@@ -5,3 +5,4 @@ elonadl/__pycache__/
 ./.vscode/settings.json
 elonadl.egg-info/
 ./build/bdist.win-amd64/
+test/elonadl_test.ps1

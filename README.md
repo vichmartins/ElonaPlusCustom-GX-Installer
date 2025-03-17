@@ -21,6 +21,9 @@ Please review the github issue: **[here](https://github.com/Ruin0x11/ElonaPlusCu
 
 
  - In this case just disable __Windows Defender__ or other Anti-Virus prior to installing and re-enable after its finished installing.
+<br>
+
+
 
 # Version:
 
@@ -29,7 +32,7 @@ Current Installer Version: **v0.1.25**<br>
 Current Game Version: **Elona+ 2.26**<br>
 
 Current Custom-GX Version: **2.26.1.0**<br>
-
+<br>
 
 
 # Result:
@@ -41,7 +44,7 @@ Current Custom-GX Version: **2.26.1.0**<br>
 - Create a Desktop Shortcut for Quick Access.
 
 - Create a Start Menu Option (Allows app to be searchable in Windows Search)
-
+<br>
 
 
 # Installation:
@@ -51,16 +54,21 @@ pip install elonadl
 
 python -m elonadl
 ```
-
+<br>
 
 
 # Updates:
 
 If you see a newer release to a newer version. Run the update command:
- ```pip install elonadl --upgrade```<br> it'll install the new latest version.<br>
+ ```pip install elonadl --upgrade``` it'll install the new latest installer version.<br>
+ Run: ```python -m elonadl``` To install latest version of the game.
 
-##### It will not impact your current game's installation. Just the python package itself. 
-##### Running the command `python -m elonadl` will download and install the latest version of the game, it will not impact the previous installation. So your saves will be intact (that being said, we always recommend backing up your saves).
+
+* **It will not impact your current game's installation. Just the python package itself.**
+
+* **Running the command** `python -m elonadl` **will download and install the latest version of the game, it will not impact the previous installation. So your saves will be intact (that being said, we always recommend backing up your saves).**
+<br>
+
 
 
 ## Install straight from .whl or tar.gz packages
@@ -78,7 +86,7 @@ The game will be setup in your current user's **%APPDATA%** folder. **(If run no
 The game will be setup in the system's **%APPDATA%** folder. **(if run as admin)**
 
 The script will inform you of the steps in the command line.
-
+<br>
 
 
 # How to Remove Package.

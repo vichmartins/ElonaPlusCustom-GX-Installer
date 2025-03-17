@@ -12,7 +12,8 @@ Please visit **[Ruin0x11](https://github.com/Ruin0x11/ElonaPlusCustom-GX)**'s Pr
 ### Learn about the game:
 
 **[Ylvania](https://ylvania.org/elona_e.html)**: Official Site.
-**[Fandom Wiki](https://elona.fandom.com/wiki/Elona_Wiki)**: Game Wiki 
+**[Fandom Wiki](https://elona.fandom.com/wiki/Elona_Wiki)**: Game Wiki.
+**[Discord](https://discord.gg/Razdxsk)**: Discord Channel.
 
 ### Need to Know:
 You may receive a false positive from Windows Defender
@@ -23,7 +24,7 @@ Please review the github issue: **[here](https://github.com/Ruin0x11/ElonaPlusCu
 
 # Version:
 
-Current Installer Version: **v0.1.20**<br>
+Current Installer Version: **v0.1.21**<br>
 
 Current Game Version: **Elona+ 2.26**<br>
 
@@ -55,11 +56,14 @@ python elonadl
 
 # Updates:
 
-If you see a newer release to a newer version of Elona+ just rerun `python elona` it'll automatically create a new install for the latest version and not touch your older install.
+If you see a newer release to a newer version. Run the update command:
+ ```pip install elonadl --upgrade```<br> it'll install the new latest version.<br>
+
+##### It will not impact your current game's installation. Just the python package itself.
 
 
 
-## Install stragiht from .whl or tar.gz packages
+## Install straight from .whl or tar.gz packages
 
 ```
 pip install elonadl-<VERSION>-py3-none-any.whl
